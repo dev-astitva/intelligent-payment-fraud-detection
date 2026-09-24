@@ -1,0 +1,41 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+.env
+.ipynb_checkpoints/
+.DS_Store
+
+# PaySim dataset is large and should be downloaded separately.
+data/*.csv
+data/*.zip
+
+
+cat > .gitignore << 'EOF'
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment / secrets
+.env
+.env.*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local data
+data/
+
+# Temporary / generated files
+*.log
+EOF
